@@ -54,18 +54,23 @@
             <form action="#">
               <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
               <div class="user-card">
-                <p class="user-name">
-                  Ім'я
-                </p>
-                <input class="input-box" type="name" alt="name">
-                <p class="user-name">Телефон</p>
-                <input class="input-box" type="tel" alt="tel">
-                <p class="user-name">Пошта</p>
-                <input class="input-box" type="email" alt="email">
-                <p class="user-name">Коментар</p>
-                <textarea class="coment" name="Введіть текст" id="" cols="30" rows="10"></textarea>
+
+                <label class="user-info" for="user-name">Ім'я</label>
+                <input class="input-box" type="name" alt="name" required>
+                 <label class="user-info" for="user-tel">Телефон</label>
+                <input class="input-box" type="tel" alt="tel" required>
+                 <label class="user-info" for="user-mail">Пошта</label>
+                <input class="input-box" type="email" alt="email" required>
+                 <label class="user-info" for="user-text">Коментар</label>
+                <textarea class="coment" name="user-text" id="user-text" cols="30" rows="10"
+                  placeholder="Введіть текст"></textarea>
               </div>
-<button type="submit">Відправити</button>
+              <div class="checkbox-list">
+<input type="checkbox">
+<label class="checkbox-text" for="">Погоджуюся з розсилкою та приймаю Умови договору</label>
+              </div>
+           
+              <button class="modal-btn" type="submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -351,7 +356,7 @@
           <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
       </div>
-      <div>
+      <div class="footer-second-block">
         <h3 class="footer-title">приєднуйтесь</h3>
         <ul class="footer-icons-social">
           <li class="icons-social">
@@ -385,6 +390,16 @@
         </ul>
       </div>
 
+      <div class="footer-third-block">
+        <h3 class="footer-title">
+          ПІДПИШІТЬСЯ НА РОЗСИЛКУ
+        </h3>
+        <div class="footer-input-box">
+        <input class="footer-input" type="email" placeholder="E-mail">
+        <button class="footer-btn" type="submit">Підписатися</button>
+        </div>
+
+      </div>
     </div>
 
 
