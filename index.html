@@ -53,24 +53,42 @@
               </svg></button>
             <form action="#">
               <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-              <div class="user-card">
 
+              <div class="user-card">
                 <label class="user-info" for="user-name">Ім'я</label>
-                <input class="input-box" type="name" alt="name" required>
-                 <label class="user-info" for="user-tel">Телефон</label>
-                <input class="input-box" type="tel" alt="tel" required>
-                 <label class="user-info" for="user-mail">Пошта</label>
-                <input class="input-box" type="email" alt="email" required>
-                 <label class="user-info" for="user-text">Коментар</label>
+                <div class="user-card-info">
+                  <input class="input-box" for="name" type="name" alt="name" required>
+                  <svg width="18" height="18">
+                    <use href="./images/modal-icons.svg#icon-person"></use>
+                  </svg>
+                </div>
+                <label class="user-info" for="user-tel">Телефон</label>
+                <div class="user-card-info">
+                  <input class="input-box" for="name" type="tel" alt="tel" required>
+                  <svg width="18" height="18">
+                    <use href="./images/modal-icons.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <label class="user-info" for="user-mail">Пошта</label>
+                <div class="user-card-info">
+                  <input class="input-box" for="name" type="email" alt="email" required>
+                  <svg width="18" height="18">
+                    <use href="./images/modal-icons.svg#icon-email"></use>
+                  </svg>
+                </div>
+
+                <label class="user-info" for="user-text">Коментар</label>
                 <textarea class="coment" name="user-text" id="user-text" cols="30" rows="10"
                   placeholder="Введіть текст"></textarea>
               </div>
               <div class="checkbox-list">
-<input type="checkbox">
-<label class="checkbox-text" for="">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                <input type="checkbox" name="mail-sent" id="mail-sent">
+                <label class="checkbox-text" for="mail-sent">Погоджуюся з розсилкою та приймаю </label>
+                <a class="contract" href="#" target="_blank" rel="noopener noreferrer">Умови договору</a>
               </div>
-           
-              <button class="modal-btn" type="submit">Відправити</button>
+              <div class="brd-content">
+                <button class="modal-btn" type="submit">Відправити</button>
+              </div>
             </form>
           </div>
         </div>
@@ -395,14 +413,14 @@
           ПІДПИШІТЬСЯ НА РОЗСИЛКУ
         </h3>
         <div class="footer-input-box">
-        <input class="footer-input" type="email" placeholder="E-mail">
-        <button class="footer-btn" type="submit">Підписатися</button>
+          <input class="footer-input" type="email" placeholder="E-mail" required>
+          <button class="footer-btn" type="submit">Підписатися</button>
+          <svg class="footer-icon" width="24" height="24">
+            <use href="./images/modal-icons.svg#icon-telegram"></use>
+          </svg>
         </div>
-
       </div>
     </div>
-
-
   </footer>
   <script src="./js/modal.js"></script>
 </body>
